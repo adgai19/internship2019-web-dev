@@ -68,7 +68,30 @@ function displayText(){
 
 
 }
+var LoginCredentials=[{
+        username:"user1",
+        password:"password"
+},{
+        username:"user2",
+        password:"password"
 
+}]
 let logindirect=()=>{
         console.log("hwllo ");
+        let uid=document.getElementById('exampleUid1').value;
+        let pword=document.getElementById('exampleInputPassword1').value;
+        let i,authorized=false;
+        for(i=0;i<LoginCredentials.length;i++){
+                if(LoginCredentials[i].username==uid && LoginCredentials[i].password==pword){
+                        authorized=true;
+                        console.log()
+                }
+        console.log(authorized);
+        if(authorized){
+                document.getElementById('submitbtn').setAttribute("href","home.html");
+        }
+        else{
+                document.getElementById('submitbtn').setAttribute("href","login-denied.html");        }
+        }
+
 }

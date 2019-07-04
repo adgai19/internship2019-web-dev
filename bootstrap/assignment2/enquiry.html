@@ -22,6 +22,8 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                                 <ul class="navbar-nav">
+                                        <li class="nav-items text-white"><a href="login.html" class="nav-link">Log
+                                                        In</a></li>
                                         <li class="nav-items"><a href="home.html" class="nav-link">Home</a></li>
                                         <li class="nav-items"><a href="product.html" class="nav-link">Product</a></li>
                                         <li class="nav-items"><a href="enquiry.html" class="nav-link">Enquiry</a></li>
@@ -32,54 +34,52 @@
                 </nav>
                 <main>
                         <h1 class="display-1 text-center">Enquiry</h1>
-  
-                                <fieldset>
-                                        <legend>Product Detais</legend>
-                                        <div class="form-row">
-                                                <div class="form-group col-md-4">
-                                                        <label for="productName">Product Name</label>
-                                                        <input type="text" class="form-control" name="productName"
-                                                                id="productName">
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                        <label for="productQuestion">Question</label>
-                                                        <input type="text" class="form-control" name="productQuestion"
-                                                                id="productQuestion">
-                                                </div>
-                                        </div>
-                                </fieldset>
-                                <fieldset>
-                                        <legend>Customer Detais</legend>
-                                        <div class="form-row ">
-                                                <div class="form-group col-md-4">
 
-                                                        <label for="customerName">First name</label>
-                                                        <input type="text" class="form-control" name="firstName"
-                                                                id="firstName">
-
-                                                </div>
-                                                <div class="form-group col-md-4">
-                                                        <label for="lastName">Last Name</label>
-                                                        <input type="text" class="form-control" name="lastName"
-                                                                id="lastName">
-                                                </div>
-                                        </div>
-                                </fieldset>
+                        <fieldset>
+                                <legend>Product Detais</legend>
                                 <div class="form-row">
-                                        <legend>Contact Details</legend>
                                         <div class="form-group col-md-4">
-                                                <label for="email">Email</label>
-                                                <input type="email" id="email" class="form-control">
+                                                <label for="productName">Product Name</label>
+                                                <input type="text" class="form-control" name="productName"
+                                                        id="productName">
                                         </div>
                                         <div class="form-group col-md-4">
-                                                <label for="contactNo">Contact Number</label>
-                                                <input type="number" id="contactNo" class="form-control">
+                                                <label for="productQuestion">Question</label>
+                                                <input type="text" class="form-control" name="productQuestion"
+                                                        id="productQuestion">
                                         </div>
                                 </div>
-                                <button id="intermediate" onclick="displayText()">submit</button>
+                        </fieldset>
+                        <fieldset>
+                                <legend>Customer Detais</legend>
+                                <div class="form-row ">
+                                        <div class="form-group col-md-4">
+
+                                                <label for="customerName">First name</label>
+                                                <input type="text" class="form-control" name="firstName" id="firstName">
+
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" class="form-control" name="lastName" id="lastName">
+                                        </div>
+                                </div>
+                        </fieldset>
+                        <div class="form-row">
+                                <legend>Contact Details</legend>
+                                <div class="form-group col-md-4">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" class="form-control">
+                                </div>
+                                <div class="form-group col-md-4">
+                                        <label for="contactNo">Contact Number</label>
+                                        <input type="number" id="contactNo" class="form-control">
+                                </div>
+                        </div>
+                        <button id="intermediate" onclick="displayText()">submit</button>
         </div>
         </div>
-      <hr>
+        <hr>
         <p class="container" id="dataOut"></p>
         </main>
         <footer class="page-footer font-small bg-secondary pt-4">
