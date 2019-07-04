@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>html form</title>
+</head>
+<body>
+        <form action="HelloWorld.html" method="get">
+                <fieldset>
+                        <legend>form</legend>
+                        Name: <input type="text" name="name" placeholder="name" >
+                        <br>
+                        <br>
+                        <fieldset>
+                                <legend>Gender</legend>
+                                <input type="radio" name="gender" id="male" value="male">male
+                                <!-- name is same for two elements belonging to same family of radio buttons-->
+                                <input type="radio" name="gender" id="female" value="female">female
+                                <input type="radio" name="gender" id="other" value="other">other
+                                <!-- checkbox<input type="checkbox" name="checkboxtest" id="checkboxtest"> -->
+                </fieldset>
+                <br>
+                <label >Year:</label>
+                <!-- dropdown has select nested inside option -->
+                <select name="" id="">
+                       
+                        <option value="FE">FE</option>
+                        <option value="SE">SE</option>
+                        <option value="TE">TE</option>
+                        <option value="BE">BE</option>
+                </select>
+                <fieldset>
+                        <legend>subjects</legend>
+                        <input type="checkbox" name="sub1" id="">sub1
+                        <input type="checkbox" name="sub2" id="">sub2
+                        <input type="checkbox" name="sub3" id="">sub3
+                        <input type="checkbox" name="sub4" id="">sub4
+                        <input type="checkbox" name="sub5" id="">sub5
+                </fieldset>
+                <fieldset>                        
+                        <legend>Login details</legend>
+                        email:  <input type="email" name="email" id="email" >
+                        <br>
+                        password:<input type="password" name="password" id="password" ">
+                </fieldset>
+                <input type="submit" value="submit">
+                <!-- <button type="submit">button</button> -->
+                </fieldset>
+        </form>
+</body>
+</html>

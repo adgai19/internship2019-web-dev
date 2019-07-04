@@ -1,0 +1,5 @@
+let plus = () => document.getElementById('answer1').innerHTML = parseInt(document.getElementById('num1').value) + parseInt(document.getElementById('num2').value);
+let minus = () => document.getElementById('answer2').innerHTML = parseInt(document.getElementById('num3').value) - parseInt(document.getElementById('num4').value);
+let multiply = () => document.getElementById('answer3').innerHTML = parseInt(document.getElementById('num5').value) * parseInt(document.getElementById('num6').value);
+let divide = () => document.getElementById('answer4').innerHTML = parseInt(document.getElementById('num7').value) / parseInt(document.getElementById('num8').value);
+let modulo = () => document.getElementById('answer5').innerHTML = parseInt(document.getElementById('num9').value) % parseInt(document.getElementById('num10').value);

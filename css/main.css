@@ -1,0 +1,51 @@
+h1 {
+  -webkit-text-decoration: gold;
+          text-decoration: gold;
+  text-align: center;
+  color: cadetblue;
+  background-color: antiquewhite;
+  font-family: 'Courier New', Courier, monospace;
+  font: 5em serif;
+}
+
+p {
+  color: cadetblue;
+  background-color: cornsilk;
+  font: 1em sans-serif;
+}
+
+.border {
+  border-style: outset;
+  border-width: 0.1em;
+}
+
+.error {
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-size: 1.5em;
+  color: red;
+}
+
+#alignleft {
+  text-align: right;
+}
+
+#fontchange {
+  font-family: serif;
+}
+
+a:visited {
+  color: aqua;
+}
+
+a:hover {
+  color: brown;
+}
+
+a:link {
+  color: blueviolet;
+}
+
+a:active {
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */

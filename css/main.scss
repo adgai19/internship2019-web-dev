@@ -1,0 +1,57 @@
+h1 {
+        text-decoration: gold;
+        text-align: center;
+        color: cadetblue;
+        background-color: antiquewhite;
+        font-family: 'Courier New', Courier, monospace;
+        font: 5em serif;
+}
+
+.heading {}
+
+p {
+        color: cadetblue;
+        background-color: cornsilk;
+        font: 1em sans-serif;
+}
+
+.border {
+        border-style: outset;
+        border-width: 0.1em;
+}
+
+.error {
+        /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        font-size: 1.5em;
+        color: red;
+
+}
+
+#alignleft {
+        text-align: right;
+}
+
+#fontchange {
+
+        font-family: serif;
+}
+
+a:visited {
+        // visited link
+        color: aqua;
+}
+
+a:hover {
+        // hover the mouse over link
+        color: brown;
+}
+
+a:link {
+        // unvisited link
+        color: blueviolet;
+}
+
+a:active {
+        // while clicking
+        color: #000;
+}
