@@ -68,3 +68,7 @@ function displayText(){
 
 
 }
+
+let logindirect=()=>{
+        console.log("hwllo ");
+}
