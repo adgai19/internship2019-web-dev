@@ -14,7 +14,8 @@ var student={
                         console.log(this.marks[i]);
                         sum+=this.marks[i];
                 }
-                return sum;     
+                return sum; 
+                    
                           
         },
 };      
