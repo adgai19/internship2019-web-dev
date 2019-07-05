@@ -85,16 +85,14 @@ let logindirect = () => {
         for (i = 0; i < LoginCredentials.length; i++) {
                 if (LoginCredentials[i].username == uid && LoginCredentials[i].password == pword) {
                         authorized = true;
-
                 }
-                console.log(authorized);
-                if (authorized) {
-                      //  window.location.assign('home.html');
-                      top.location="home.html";
-                }
-                else {
-                        top.location="login-denied.html";
-                }
-
+        }
+        console.log(authorized);
+        if (authorized) {
+                //  window.location.assign('home.html');
+                top.location = "home.html";
+        }
+        else {
+                top.location = "login-denied.html";
         }
 };
