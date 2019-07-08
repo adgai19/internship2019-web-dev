@@ -3,12 +3,12 @@ exports.__esModule = true;
 var address_1 = require("./address");
 var enum_1 = require("./enum");
 var student = /** @class */ (function () {
-    function student(fname, lname, rollno, saddress, sgrades) {
+    function student(fname, lname, rollno, saddress) {
         this.fname = fname;
         this.lname = lname;
         this.rollno = rollno;
         this.saddress = saddress;
-        this.sgrades = sgrades;
+        this.sgrades = enum_1.Grade.F;
     }
     student.prototype.getFirstName = function () {
         return this.fname;
@@ -36,6 +36,30 @@ var student = /** @class */ (function () {
         temp /= this.marks.length;
         return temp;
     };
+    student.prototype.grade = function () {
+        var percentage = this.percent();
+        if (percentage > 90) {
+            this.sgrades = enum_1.Grade.A;
+        }
+        else if (percentage > 80) {
+            this.sgrades = enum_1.Grade.B;
+        }
+        else if (percentage > 80) {
+            this.sgrades = enum_1.Grade.B;
+        }
+        else if (percentage > 70) {
+            this.sgrades = enum_1.Grade.C;
+        }
+        else if (percentage > 60) {
+            this.sgrades = enum_1.Grade.D;
+        }
+        else if (percentage > 50) {
+            this.sgrades = enum_1.Grade.E;
+        }
+        else {
+            this, this.sgrades = enum_1.Grade.F;
+        }
+    };
     student.prototype.advice = function () {
         if (this.sgrades == enum_1.Grade.A) {
             console.log("good job1");
@@ -59,9 +83,10 @@ var student = /** @class */ (function () {
     return student;
 }());
 var addresstemp = new address_1.Address("Goa", "India");
-var student1 = new student("john", "doe", 112358, addresstemp, enum_1.Grade.A);
+var student1 = new student("john", "doe", 112358, addresstemp);
 student1.fullname();
-student1.marks = [12, 23, 36, 98, 74, 45];
+student1.marks = [95, 93, 96, 98, 94, 75];
 console.log(student1);
 console.log("percentage=" + student1.percent());
+student1.grade();
 student1.advice();

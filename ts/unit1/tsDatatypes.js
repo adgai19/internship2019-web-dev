@@ -85,7 +85,15 @@ console.log(calc(6, 3));
 console.log(calc(6));
  */
 //implict typing
+/* if a veriable is initialised while declaring, implicit typecasting takes place and the veriable takes the type of the initialised value */
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 var a;
 a = 5;
 console.log(typeof (a));
+//-------------------------------------------------------------------------
+/* used to hold two different type of contents
+syntex*/
+var union;
+union = 90;
+union = "string";
+//both valid

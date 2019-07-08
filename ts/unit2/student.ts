@@ -1,10 +1,10 @@
-import { Address } from './address'
-import { Grade } from './enum'
+import {Address} from './address'
+import {Grade} from './enum'
 
 class student {
         marks: Array<number>
         private sgrades: Grade;
-        constructor(private fname: string, private lname: string, private rollno: number, private saddress: Address, ) {
+        constructor(private fname: string, private lname: string, private rollno: number, private saddress: Address) {
                 this.sgrades = Grade.F;
         }
         getFirstName() {
@@ -43,15 +43,23 @@ class student {
                 }
                 else if (percentage > 80) {
                         this.sgrades = Grade.B;
-                else if (percentage > 70 {
+                }
+
+                else if (percentage > 70) {
                         this.sgrades = Grade.C;
                 }
                 else if (percentage > 60) {
                         this.sgrades = Grade.D;
                 }
+                else if(percentage >50){
+                        this.sgrades=Grade.E;
                 }
+                else{
+                        this,this.sgrades=Grade.F;
+                }
+        }
         advice() {
-               if (this.sgrades == Grade.A) {
+                if (this.sgrades == Grade.A) {
                         console.log("good job1");
                 }
                 if (this.sgrades == Grade.B) {
@@ -70,12 +78,13 @@ class student {
                         console.log("good job6");
                 }
 
-                                }
-                        }
-                        let addresstemp = new Address("Goa", "India");
-                        let student1 = new student("john", "doe", 112358, addresstemp, Grade.A);
-                        student1.fullname();
-                        student1.marks = [12, 23, 36, 98, 74, 45];
-                        console.log(student1);
-                        console.log("percentage=" + student1.percent());
-                        student1.advice();
+        }
+}
+let addresstemp = new Address("Goa", "India");
+let student1 = new student("john", "doe", 112358, addresstemp);
+student1.fullname();
+student1.marks = [95, 93, 96, 98, 94, 75];
+console.log(student1);
+console.log("percentage=" + student1.percent());
+student1.grade();
+student1.advice();
