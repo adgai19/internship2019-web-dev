@@ -3,6 +3,6 @@ let user={
         location:["loc1"],
         addloc:function(location){
                 this.location.push(location);
-                return "hello";
+                //return "hello";
         }
 };
