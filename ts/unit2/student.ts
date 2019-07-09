@@ -1,7 +1,7 @@
-import {Address} from './address'
-import {Grade} from './enum'
+import { Address } from './address'
+import { Grade } from './enum'
 
-class student {
+export class student {
         marks: Array<number>
         private sgrades: Grade;
         constructor(private fname: string, private lname: string, private rollno: number, private saddress: Address) {
@@ -22,7 +22,7 @@ class student {
         setLantName(lname: string) {
                 this.lname = lname;
         }
-        fullname() {
+        fullName() {
                 console.log(this.fname + ' ' + this.lname);
         }
         percent(): number {
@@ -51,41 +51,41 @@ class student {
                 else if (percentage > 60) {
                         this.sgrades = Grade.D;
                 }
-                else if(percentage >50){
-                        this.sgrades=Grade.E;
+                else if (percentage > 50) {
+                        this.sgrades = Grade.E;
                 }
-                else{
-                        this,this.sgrades=Grade.F;
+                else {
+                        this, this.sgrades = Grade.F;
                 }
         }
         advice() {
                 if (this.sgrades == Grade.A) {
-                        console.log("good job1");
+                        console.log("message = good job1");
                 }
                 if (this.sgrades == Grade.B) {
-                        console.log("good job2");
+                        console.log("message = good job2");
                 }
                 if (this.sgrades == Grade.C) {
-                        console.log("good job3");
+                        console.log("message = good job3");
                 }
                 if (this.sgrades == Grade.D) {
-                        console.log("good job4");
+                        console.log("message = good job4");
                 }
                 if (this.sgrades == Grade.E) {
-                        console.log("good job5");
+                        console.log("message = good job5");
                 }
                 if (this.sgrades == Grade.F) {
-                        console.log("good job6");
+                        console.log("message = good job6");
                 }
 
         }
 }
 let addresstemp = new Address("Goa", "India");
 let student1 = new student("john", "doe", 112358, addresstemp);
-student1.fullname();
 student1.marks = [95, 93, 96, 98, 94, 75];
-// console.log(student1);
-console.log("percentage=" + student1.percent());
-student1.grade();
-student1.advice();
 console.log(student1);
+student1.fullName();
+student1.grade();
+console.log("percentage=" + student1.percent());
+student1.advice();
+

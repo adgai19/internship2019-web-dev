@@ -62,22 +62,22 @@ var student = /** @class */ (function () {
     };
     student.prototype.advice = function () {
         if (this.sgrades == enum_1.Grade.A) {
-            console.log("good job1");
+            console.log("message = good job1");
         }
         if (this.sgrades == enum_1.Grade.B) {
-            console.log("good job2");
+            console.log("message = good job2");
         }
         if (this.sgrades == enum_1.Grade.C) {
-            console.log("good job3");
+            console.log("message = good job3");
         }
         if (this.sgrades == enum_1.Grade.D) {
-            console.log("good job4");
+            console.log("message = good job4");
         }
         if (this.sgrades == enum_1.Grade.E) {
-            console.log("good job5");
+            console.log("message = good job5");
         }
         if (this.sgrades == enum_1.Grade.F) {
-            console.log("good job6");
+            console.log("message = good job6");
         }
     };
     return student;
@@ -89,5 +89,5 @@ student1.marks = [95, 93, 96, 98, 94, 75];
 // console.log(student1);
 console.log("percentage=" + student1.percent());
 student1.grade();
-student1.advice();
 console.log(student1);
+student1.advice();
