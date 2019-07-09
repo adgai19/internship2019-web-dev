@@ -1,30 +1,30 @@
-class person{
-        constructor(public fname:string,public lname:string){
+class person {
+        constructor(public fname: string, public lname: string) {
                 console.log("in parent")
         }
-        greet(){
+        greet() {
                 console.log("hi");
         }
 }
-class programmer extends person{
-        language:string
-        constructor(fname:string,lname:string){
-                super(fname,lname);
+class programmer extends person {
+        language: string
+        constructor(fname: string, lname: string) {
+                super(fname, lname);
                 console.log("in child");
         }
-        greet(){
+        greet() {
                 console.log("hello world");
         }
-        greet2(){
+        greet2() {
                 super.greet();
         }
 }
-let me=new programmer("myname","name");
+let me = new programmer("myname", "name");
 console.log(me);
 me.greet();
 me.greet2();
-me.language="C";
+me.language = "C";
 //[polymorphism
-let me2:person=new programmer("fname","lname");
+let me2: person = new programmer("fname", "lname");
 console.log(me2);
 //me2.language not avalible
