@@ -1,3 +1,3 @@
 export enum Grade{
-        A,B,C,D,E,F
+        A="A",B="B",C="C",D="D",E="E",F="F"
 }
