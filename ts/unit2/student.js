@@ -8,7 +8,7 @@ var student = /** @class */ (function () {
         this.lname = lname;
         this.rollno = rollno;
         this.saddress = saddress;
-        this.sgrades = enum_1.Grade.F;
+        // this.sgrades = Grade.F;
     }
     student.prototype.getFirstName = function () {
         return this.fname;
@@ -86,7 +86,8 @@ var addresstemp = new address_1.Address("Goa", "India");
 var student1 = new student("john", "doe", 112358, addresstemp);
 student1.fullname();
 student1.marks = [95, 93, 96, 98, 94, 75];
-console.log(student1);
+// console.log(student1);
 console.log("percentage=" + student1.percent());
 student1.grade();
 student1.advice();
+console.log(student1);

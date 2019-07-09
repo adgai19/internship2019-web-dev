@@ -5,7 +5,7 @@ class student {
         marks: Array<number>
         private sgrades: Grade;
         constructor(private fname: string, private lname: string, private rollno: number, private saddress: Address) {
-                this.sgrades = Grade.F;
+                // this.sgrades = Grade.F;
         }
         getFirstName() {
                 return this.fname;
@@ -84,7 +84,8 @@ let addresstemp = new Address("Goa", "India");
 let student1 = new student("john", "doe", 112358, addresstemp);
 student1.fullname();
 student1.marks = [95, 93, 96, 98, 94, 75];
-console.log(student1);
+// console.log(student1);
 console.log("percentage=" + student1.percent());
 student1.grade();
 student1.advice();
+console.log(student1);
