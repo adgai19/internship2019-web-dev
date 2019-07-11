@@ -1,19 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import {User} from './user.model';
+import { User } from './user.model';
 @Component({
   selector: 'app-helloworld2',
   templateUrl: './helloworld2.component.html',
   styleUrls: ['./helloworld2.component.sass']
 })
 export class Helloworld2Component implements OnInit {
-  user:User;
+  user: User;
   constructor() {
-    this.user=new User("adgai","gai","23698547");
-   }
-  
+    this.user = new User("Adgai", "Gai", ["23698547", "3652215782", "1258746935"], "Panaji");
+  }
+
   ngOnInit() {
   }
-  dispUserInfo(){
-    return this.user.getName()+" "+this.user.getNo();
+  dispName() {
+    return this.user.getName();
+  }
+  /* dispUserPhone() {
+    return this.user.getNo();
+  } */
+  dispAddress() {
+    return this.user.getAddress();
   }
 }
