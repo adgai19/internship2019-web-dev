@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { User } from './user.model';
 @Component({
   selector: 'app-helloworld2',
@@ -6,20 +6,29 @@ import { User } from './user.model';
   styleUrls: ['./helloworld2.component.sass']
 })
 export class Helloworld2Component implements OnInit {
-  user: User;
+  @Input() user: User;
+  // Name:string;
+  
   constructor() {
-    this.user = new User("Adgai", "Gai", ["23698547", "3652215782", "1258746935"], "Panaji");
-  }
+    // this.Name=this.name;
+    console.log("hello");
 
-  ngOnInit() {
   }
-  dispName() {
-    return this.user.getName();
+  ngOnInit() {//lifecycle hook
+    //gets called when all values are assigned
+    //attributes are distributed in this function
+    console.log(this.user);
+    //this.user = new User(this.name, "Gai", ["23698547", "3652215782", "1258746935"], "Panaji");
+
+
   }
-  /* dispUserPhone() {
-    return this.user.getNo();
-  } */
-  dispAddress() {
-    return this.user.getAddress();
-  }
+   dispName() {
+     return this.user.getName();
+   }
+  //  dispUserPhone() {
+  //    return this.user.getNo();
+  //  } 
+   dispAddress() {
+     return this.user.getAddress();
+   }
 }
